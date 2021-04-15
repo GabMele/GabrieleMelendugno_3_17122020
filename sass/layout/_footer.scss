@@ -1,0 +1,25 @@
+.site-footer {
+    background-color: #353535;
+    padding: 1.5rem;
+}
+
+.footer {
+    &__logo {
+        -webkit-filter: invert(1) ;
+        filter: grayscale(3) invert(1) contrast(200%);
+    }
+    &__logoimg {
+        width: 100px;
+    }
+    &__navlink {
+        &-normal {        
+        }
+
+        &-bold { 
+            font-weight: 600;
+        }
+
+    }
+
+
+}

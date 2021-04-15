@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 2px 10px 2px 10px;
+    line-height: 0.4rem;
+    &__h2 {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    &__p {
+        font-size: 1rem;
+
+    }
+
+}

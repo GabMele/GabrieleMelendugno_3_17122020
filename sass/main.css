@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px 10px 2px 10px;
+  line-height: 0.4rem;
+}
+
+.menuitem__h2 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.menuitem__p {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /*    color: map.get($theme-colors,"primary"); */
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: -2rem;
+  line-height: 1.7;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.white-text {
+  color: white;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  width: 60%;
+  padding: 1rem 1.2rem;
+  margin: 0.8rem 0.5rem 2rem 0.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(0deg, #9356DC 30%, #FF79DA 100%);
+  box-shadow: 5px 5px 5px lightgray;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 5px 5px 15px gray;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 0 .8rem;
+}
+
+.homeintro {
+  margin: 0;
+}
+
+.homeintro__location {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #EAEAEA;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.homeintro__location_name {
+  padding: 0 0 0 1rem;
+}
+
+.homeintro__location_icon {
+  padding-top: 1.5rem;
+}
+
+.homeintro__titlewrapper {
+  margin: 0;
+  background-color: #F6F6F6;
+  padding: 1rem;
+  text-align: center;
+}
+
+.homeintro__titlewrapper__title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.homeintro__titlewrapper__desc {
+  font-size: 1.2rem;
+}
+
+.homechoice {
+  padding: 1.5rem;
+}
+
+.homechoice__item {
+  display: flex;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  margin: 20px 0 20px 6px;
+  padding: 0 0.5rem 0 0.5rem;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+.homechoice__icon {
+  padding: 1.2rem;
+}
+
+.homechoice__smallcircle {
+  background-color: #9356DC;
+  height: 22px;
+  width: 22px;
+  margin: 18px 0px 10px -20px;
+  border-radius: 50%;
+}
+
+.homechoice__number {
+  color: white;
+  font-weight: 500;
+  margin-top: 1px;
+  margin-left: 6px;
+}
+
+.homerestaurants {
+  background-color: #F6F6F6;
+  padding: 1.5rem;
+}
+
+.homerestaurants__item {
+  width: 100%;
+  height: 230px;
+  margin: 0 0 50px 0;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 10px 10px 10px lightgray;
+  background-color: white;
+}
+
+.homerestaurants__photo {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+}
+
+.homerestaurants__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.homerestaurants__title_h2 {
+  line-height: 1;
+}
+
+.homerestaurants__title_desc {
+  line-height: 1;
+}
+
+.pagemain {
+  background-color: #F6F6F6;
+  padding: 0;
+}
+
+.pagemain__headerwrapper {
+  position: relative;
+}
+
+.pagemain__headerbg_img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pagemain__headertitle {
+  position: absolute;
+  width: 91%;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  margin: -30px 0 20px 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagemain__headericon {
+  padding: 5px 5px 5px 5px;
+}
+
+.pagemain__mainwrapper {
+  padding: 1rem;
+}
+
+.pagemain__item {
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 2px 10px 2px 10px;
+}
+
+.pagemain__chaptertitle {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+}
+
+.pagemain__button {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.site-footer {
+  background-color: #353535;
+  padding: 1.5rem;
+}
+
+.footer__logo {
+  filter: grayscale(3) invert(1) contrast(200%);
+}
+
+.footer__logoimg {
+  width: 100px;
+}
+
+.footer__navlink-bold {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

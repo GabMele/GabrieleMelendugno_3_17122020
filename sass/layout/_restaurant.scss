@@ -1,0 +1,61 @@
+.intro {
+
+    margin: 0;
+    &__location {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: #EAEAEA;        
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        &_name {
+            padding: 0 0 0 1rem;
+
+        }
+        &_icon{
+            padding-top: 1.5rem;
+        }
+    }
+
+    &__titlewrapper {
+        margin: 0;
+        background-color: #F6F6F6;       
+        padding: 1rem;
+        text-align: center;
+
+        &__title {
+            margin: 0;
+            font-weight: 600;
+
+        }
+
+        &__desc {
+
+
+        }
+
+        &__button {
+
+        }
+    }
+}
+
+.choice {
+    padding: 1.5rem;
+    &__item {
+        display: flex;
+    }
+}
+
+.restaurants {
+    &__item {
+        display: flex;
+        width: 90%;
+    }
+    &__photo {
+        object-fit: cover;
+    }
+
+}
