@@ -2,26 +2,27 @@ body {
     font-family: 'Roboto', sans-serif;
 /*    color: map.get($theme-colors,"primary"); */
     font-size: 1rem;
-    font-weight: 200;
-    line-height: 1.2;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.font-alt {
+    font-family: 'Shrikhand';
 }
 
 h2 {
-    font-weight: 800;
     font-size: 1.1rem;
 }
 
-
-
-
+p {
+    font-size: 1rem;
+}
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -30,14 +31,20 @@ ul {
     line-height: 1.7
 }
 
-
 li a {
     text-decoration: none;
 }
 
-
 .white-text {
     color: white;
+}
+
+.primary-colour {
+    color: $colour-primary;
+}
+
+.checked-colour {
+    color: $colour-checked;
 }
 
 .bold {

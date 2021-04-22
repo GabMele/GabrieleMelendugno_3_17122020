@@ -13,13 +13,19 @@
     }
     &__navlink {
         &-normal {        
+        
         }
-
         &-bold { 
-            font-weight: 600;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            &_p {
+                margin: 0 0 0 12px;
+            }
         }
-
+        &_smallicon {
+            text-align: center;
+            font-size: 14px;
+        }
     }
-
-
 }

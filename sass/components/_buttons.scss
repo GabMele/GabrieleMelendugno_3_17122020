@@ -14,6 +14,7 @@
     cursor: pointer;
     
     &:hover {
+        $colour-secondary: lighten($colour-secondary,5%);
         background-image: linear-gradient(0deg, $colour-primary 0%, $colour-secondary 100%);  
         box-shadow: 5px 5px 15px gray;
     }

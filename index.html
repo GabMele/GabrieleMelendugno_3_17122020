@@ -21,30 +21,23 @@
     <section class="homeintro">
         <div class="homeintro__location">
             <i class="homeintro__location_icon fa fas fa-map-marker"></i>
-            <p class="homeintro__location_name">Paris, Belleville</p>
+            <h2 class="homeintro__location_name">Paris, Belleville</h2>
         </div>
         <div class="homeintro__titlewrapper">   
             <h1>Réservez le menu qui vous convient</h1>
             <p class="homeintro__desc">Découvrez des restaurants d'exception, selectionné par nos soins.</p>
-            <a href="#" class="btn">Explorer nos restaurants</a>
-        </div>
-
-            
+            <a href="#restaurants" class="btn">Explorer nos restaurants</a>
         </div>
     </section>
 
-
-
     <section class="homechoice">
-        <h1>
-            Fonctionnement
-        </h1>
+        <h1>Fonctionnement</h1>
         <div class="homechoice__item">
             <div class="homechoice__smallcircle">
                 <p class="homechoice__number">1</p>
             </div>
             <i class="fas fa-mobile-alt homechoice__icon"></i>
-            <p>Choisissez un restaurant</p>
+            <h2>Choisissez un restaurant</h2>
         </div>
 
         <div class="homechoice__item">
@@ -52,75 +45,95 @@
                 <p class="homechoice__number">2</p>
             </div>
             <i class="fas fa-list-ul homechoice__icon"></i>
-            <p>Composez votre menu</p>
+            <h2>Composez votre menu</h2>
         </div>
 
         <div class="homechoice__item">
             <div class="homechoice__smallcircle">
                 <p class="homechoice__number">3</p>
             </div>
-            <i class="fas fa-store homechoice__icon"></i>
-            <p>Dégustez au restaurant</p>
+            <i class="fas fa-store homechoice__icon primary-colour"></i>
+            <h2>Dégustez au restaurant</h2>
         </div>
     </section>
 
-
-
-    <section class="homerestaurants">
+    <section class="homerest">
+        <a id="restaurants"></a>
         <h1>Restaurants</h1>
-        <div class="homerestaurants__wrapper">
 
-            <div class="homerestaurants__item">
-                <figure class="homerestaurants__photo">
-                    <img class="homerestaurants__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    <figcaption>
-                        <h2 class="homerestaurants__title_h2">La palette du goût</h2>               
-                        <p class="homerestaurants__title_desc">Ménilmontant</p>
+        <a href="restaurant-la-palette-du-gout.html">
+            <div class="homerest__item">
+                <figure class="homerest__photo">
+                    <img class="homerest__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <figcaption class="homerest__item_caption">
+                        <div class="homerest__item_caption_left">
+                            <h2 class="homerest__item_caption_title_h2">La palette du goût</h2>               
+                            <p class="homerest__item_caption_title_desc">Ménilmontant</p>
+                        </div>
+                        <div class="homerest__heart_div">
+                            <i class="far fa-heart homerest__hearticon-empty"></i>
+                            <i class="fas fa-heart homerest__hearticon-fill"></i>
+                        </div>
                     </figcaption>
                 </figure>
             </div>
-
-
-            <div class="homerestaurants__item">
-                <figure class="homerestaurants__photo">
-                    <img class="homerestaurants__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                    <figcaption>
-                        <h2 class="homerestaurants__title_h2">La note enchanté<em></em></h2>               
-                        <p class="homerestaurants__title_desc">Charonne</p>
+        </a>
+        
+        <a href="restaurant-la-note-enchantee.html">
+            <div class="homerest__item">
+                <figure class="homerest__photo">
+                    <img class="homerest__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                    <figcaption class="homerest__item_caption">
+                        <div class="homerest__item_caption_left">
+                            <h2 class="homerest__item_caption_title_h2">La note enchanté</h2>               
+                            <p class="homerest__item_caption_title_desc">Charonne</p>
+                        </div>
+                        <div class="homerest__heart_div">
+                            <i class="far fa-heart homerest__hearticon-empty"></i>
+                            <i class="fas fa-heart homerest__hearticon-fill"></i>
+                        </div>
                     </figcaption>
                 </figure>
             </div>
+        </a>
 
+        <a href="restaurant-a-la-francaise.html">
+            <div class="homerest__item">
+                <figure class="homerest__photo">
+                    <img class="homerest__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                    <figcaption class="homerest__item_caption">
+                        <div class="homerest__item_caption_left">
+                            <h2 class="homerest__item_caption_title_h2">À la française</h2>               
+                            <p class="homerest__item_caption_title_desc">Cité Rouge</p>
+                        </div>
+                        <div class="homerest__heart_div">
+                            <i class="far fa-heart homerest__hearticon-empty"></i>
+                            <i class="fas fa-heart homerest__hearticon-fill"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </a>
+
+        <a href="restaurant-la-delice-des-sens.html">
+            <div class="homerest__item">
+                <figure class="homerest__photo">
+                    <img class="homerest__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                    <figcaption class="homerest__item_caption">
+                        <div class="homerest__item_caption_left">
+                            <h2 class="homerest__item_caption_title_h2">La délice des sens</h2>               
+                            <p class="homerest__item_caption_title_desc">Folie Méricourt</p>
+                        </div>
+                        <div class="homerest__heart_div">
+                            <i class="far fa-heart homerest__hearticon-empty"></i>
+                            <i class="fas fa-heart homerest__hearticon-fill"></i>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </a>
             
-            <div class="homerestaurants__item">
-                <figure class="homerestaurants__photo">
-                    <img class="homerestaurants__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                    <figcaption>
-                        <h2 class="homerestaurants__title_h2">à la française</h2>               
-                        <p class="homerestaurants__title_desc">Cité Rouge</p>
-                    </figcaption>
-                </figure>
-            </div>
-
-
-            <div class="homerestaurants__item">
-                <figure class="homerestaurants__photo">
-                    <img class="homerestaurants__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                    <figcaption>
-                        <h2 class="homerestaurants__title_h2">La délice des sens</h2>               
-                        <p class="homerestaurants__title_desc">Folie Méricourt</p>
-                    </figcaption>
-                </figure>
-            </div>
-
-        </div>
-
-
-
     </section>
-
-    
-
 
     <footer class="site-footer">
         <div class="footer__logo">
@@ -128,16 +141,22 @@
         </div>
         <ul>
             <li>
-                <a href="#" class="footer__navlink-bold white-text"><i class="fas fa fa-utensils white-text"></i>   Proposer un restaurant</a>
+                <a href="#" class="footer__navlink-bold white-text">
+                    <i class="fas fa fa-utensils white-text"></i>
+                    <p class="footer__navlink-bold_p">&nbsp;Proposer un restaurant</p>
+                </a>
             </li>
             <li>  
-                <a href="#" class="footer__navlink-bold white-text"><i class="fas fa fa-hands-helping white-text"></i>  Devenir partenaire</a>
+                <a href="#" class="footer__navlink-bold white-text">
+                    <i class="fas fa fa-hands-helping footer__navlink_smallicon white-text"></i>
+                    <p class="footer__navlink-bold_p">Devenir partenaire</p>    
+                </a>
             </li>
             <li>
                 <a href="#" class="footer__navlink-normal white-text">Mentions légales</a>
             </li>
             <li>
-                <a href="#" class="footer__navlink-normal white-text">Contact</a>
+                <a href="mailto:replace-your-mail-here@nowhere.com" class="footer__navlink-normal white-text">Contact</a>
             </li>
         </ul>
     </footer>
