@@ -6,187 +6,209 @@
     <meta name="description" content="Formation OCR - Projet 3">
     <meta name="author" content="Gabriele Melendugno">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800|Shrikhand">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">   
     <script src="https://kit.fontawesome.com/0d6731150f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo">
-            </a>
+        <div class="page__logo">
+            <div class="page__logo_leftarrow">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left page__logo_leftarrowicon"></i>
+                </a>
+            </div>
+            <div class="page__logo_center">
+                <a href="index.html">
+                    <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+                </a>
+            </div>
+            <div class="page__logo_dummy">  
+            </div>            
         </div>
     </header>
+
 
     <section class="pagemain">
             
         <div class="pagemain__headerwrapper">
             <div class="pagemain__headerbg">
-                <img class="pagemain__headerbg_img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="logo">    
+                <img class="pagemain__headerbg_img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="logo">    
             </div>
             <div class="pagemain__headertitle">
                 <h1 class="pagemain__headertitle_title font-alt">La palette du goût</h1>
-                <i class="far fa-heart pagemain__headericon"></i>
+                <div class="pagemain__heartdiv">
+                    <i class="far fa-heart hearticon-empty"></i>
+                    <i class="fas fa-heart hearticon-fill"></i>
+                </div> 
             </div>
         </div>
 
-
         <div class="pagemain__mainwrapper">
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">entrées</h3>
+
+            <div class="pagemain__subwrapper">
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">entrées</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Fricassée d'escargot</h2>
+                        <p class="menuitem__p">Au piment d'espelette</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">25€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Foie gras de canard mi-cuit</h2>
+                        <p class="menuitem__p">Et ses copeaux de truffe noire</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">35€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Oeuf au plat</h2>
+                        <p class="menuitem__p">Assaisonné à la truffe sur lit de</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">20€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Fricassée d'escargot</h2>
-                    <p class="menuitem__p">Au pimet d'espelette</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">25€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-            
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Foie gras de canard mi-cuit</h2>
-                    <p class="menuitem__p">Et ses coupeaux de truffe noire</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">35€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
+            <div class="pagemain__subwrapper">
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">plats</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Filet de boeuf aux herbes</h2>
+                        <p class="menuitem__p">Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">40€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Parmentier de queue de boeuf</h2>
+                        <p class="menuitem__p">À la truffe sur sa purée de panais</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">35€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Filet de Turbot</h2>
+                        <p class="menuitem__p">Aux agrumes</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">44€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Oeuf au plat</h2>
-                    <p class="menuitem__p">Assaisonné à la truffe</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">20€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
+            <div class="pagemain__subwrapper">
+
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">desserts</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Paris-Brest</h2>
+                        <p class="menuitem__p">Revisitée</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">18€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Macaron au chocolat d'exception</h2>
+                        <p class="menuitem__p">Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">22€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Mousse au chocolat</h2>
+                        <p class="menuitem__p">Au piment d'espelette et à la truffe noire</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">23€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">plats</h3>
-            </div>
+        </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Filet de boeuf aux herbes</h2>
-                    <p class="menuitem__p">Accompagné de sa ribambelle de légumes</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">40€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Parmentier de queue de boeuf</h2>
-                    <p class="menuitem__p">À la truffe noire sur sa purée de panais</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">35€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Filet de Turbot</h2>
-                    <p class="menuitem__p">Aux agrumes</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">44€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">desserts</h3>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Paris-Brest</h2>
-                    <p class="menuitem__p">Revisité</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">18€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Macaron au chocolat d'exception</h2>
-                    <p class="menuitem__p">Et glace à la vanille de Madagascar</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">22€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Mousse au chocolat</h2>
-                    <p class="menuitem__p">Au piment d'espelette et à la truffe noire</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">23€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="pagemain__button">
-                <a href="#" class="btn">Commander</a>
-            </div>
+        <div class="pagemain__button">
+            <a href="#" class="btn">Commander</a>
+        </div>
     </section>
 
-    
 
     <footer class="site-footer">
         <div class="footer__logo">

@@ -6,17 +6,26 @@
     <meta name="description" content="Formation OCR - Projet 3">
     <meta name="author" content="Gabriele Melendugno">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800|Shrikhand">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">   
     <script src="https://kit.fontawesome.com/0d6731150f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo">
-            </a>
+        <div class="page__logo">
+            <div class="page__logo_leftarrow">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left page__logo_leftarrowicon"></i>
+                </a>
+            </div>
+            <div class="page__logo_center">
+                <a href="index.html">
+                    <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+                </a>
+            </div>
+            <div class="page__logo_dummy">  
+            </div>            
         </div>
     </header>
 
@@ -25,166 +34,179 @@
             
         <div class="pagemain__headerwrapper">
             <div class="pagemain__headerbg">
-                <img class="pagemain__headerbg_img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="logo">    
+                <img class="pagemain__headerbg_img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="logo">    
             </div>
             <div class="pagemain__headertitle">
                 <h1 class="pagemain__headertitle_title font-alt">La délice des sens</h1>
-                <i class="far fa-heart pagemain__headericon"></i>
+                <div class="pagemain__heartdiv">
+                    <i class="far fa-heart hearticon-empty"></i>
+                    <i class="fas fa-heart hearticon-fill"></i>
+                </div> 
             </div>
         </div>
 
-
         <div class="pagemain__mainwrapper">
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">entrées</h3>
+
+            <div class="pagemain__subwrapper">
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">entrées</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Tartare de thon</h2>
+                        <p class="menuitem__p">Assaisonné au yuzu</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">25€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Bouchée de homard croustillant</h2>
+                        <p class="menuitem__p">Et sa farandole de petits légumes</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">35€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Velouté de cèpes</h2>
+                        <p class="menuitem__p">Aux truffes</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">20€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Tartare de thon</h2>
-                    <p class="menuitem__p">Assaisonné au yuzu</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">25€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-            
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Bouchée de homard croustillant</h2>
-                    <p class="menuitem__p">Et sa farandole de petits légumes</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">35€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
+            <div class="pagemain__subwrapper">
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">plats</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Poulet rôti aux herbes de provence</h2>
+                        <p class="menuitem__p">Et sa crème de truffe</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">40€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Langouste rôtie</h2>
+                        <p class="menuitem__p">Et ses légumes de saison</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">35€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Côte de boeuf angus</h2>
+                        <p class="menuitem__p">Et sa purée de panais</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">44€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Velouté de cépes</h2>
-                    <p class="menuitem__p">Aux truffes</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">20€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
+            <div class="pagemain__subwrapper">
+
+                <div class="pagemain__chaptertitle_box">
+                    <h3 class="pagemain__chaptertitle_h2">desserts</h3>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Farandole de desserts</h2>
+                        <p class="menuitem__p">Du chef</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">18€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Crème brulé</h2>
+                        <p class="menuitem__p">Revisité</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">22€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuitem">
+                    <div class="menuitem__left">
+                        <h2 class="menuitem__h2">Tiramisu</h2>
+                        <p class="menuitem__p">À la noisette</p>
+                    </div>
+                    <div class="menuitem__right">
+                        <h2 class="menuitem__price">23€</h2>
+                        <div class="menuitem__checked">
+                            <div class="menuitem__smallcircle">
+                                <i class="fas fa-check checked-colour"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">plats</h3>
-            </div>
+        </div>
 
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Poulet rôti aux herbes de provence</h2>
-                    <p class="menuitem__p">Et sa créme de truffe</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">40€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Langouste rôtie</h2>
-                    <p class="menuitem__p">Et ses légumes de saison</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">35€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Côte de boeuf angus</h2>
-                    <p class="menuitem__p">Et sa purée de panais</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">44€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="pagemain__chaptertitle_box">
-                <h3 class="pagemain__chaptertitle_h2">desserts</h3>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Farandole de desserts</h2>
-                    <p class="menuitem__p">Du chef</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">18€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Créme brulée</h2>
-                    <p class="menuitem__p">Revisité</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">22€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="menuitem">
-                <div class="menuitem__left">
-                    <h2 class="menuitem__h2">Tiramisu</h2>
-                    <p class="menuitem__p">À la noisette</p>
-               </div>
-               <div class="menuitem__right">
-                   <h2 class="menuitem__price">23€</h2>
-                   <div class="menuitem__checked">
-                       <div class="menuitem__smallcircle">
-                            <i class="fas fa-check checked-colour"></i>
-                       </div>
-                   </div>
-               </div>
-            </div>
-
-            <div class="pagemain__button">
-                <a href="#" class="btn">Commander</a>
-            </div>
+        <div class="pagemain__button">
+            <a href="#" class="btn">Commander</a>
+        </div>
     </section>
 
     

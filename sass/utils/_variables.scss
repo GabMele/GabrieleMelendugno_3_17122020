@@ -4,4 +4,7 @@ $colour-tertiary: #99E2D0;
 $colour-bg-lightgray: #F6F6F6;
 $colour-checked: #99E2D0;
 $menu-padding: 1rem;
+$breakpoint-tablet-start:768px;
+$breakpoint-tablet-end:1199px;
+$breakpoint-desktop:$breakpoint-tablet-end+1;
 

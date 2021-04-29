@@ -1,3 +1,127 @@
+
+
+$spin-width: 180px;
+$timing: 2.8s;
+
+/* DEBUG MODE */
+/*$timing: 0.1s;*/
+
+$color-shadow: lightgray;
+$pan-color-light: $colour-primary;
+$pan-color-dark: $colour-secondary;
+$loader-color: $colour-tertiary;
+
+@keyframes crepe {
+    0% {
+        transform: scale(0.5) rotate(0) translate(-10px,-30px);
+        transform-origin: 20px 80px;
+    }
+    15% {
+        transform: scale(0.5) rotate(-5deg) translate(-30px,0px);
+    }
+    40% {
+        transform: scale(0.5) rotate(22deg) translate(-80px,-40px);
+        transform-origin: 80px 10px;
+    }
+    60% {
+        transform: scale(0.5) rotate(18deg) translate(-80px,-10px);
+        transform-origin: 80px 20px;
+    }
+    90% {
+        transform: scale(0.9) rotate(360deg) translate(-20px,-180px);
+    }
+    100% {
+        transform: scale(1) rotate(360deg) translate(-8px,-160px);
+    }
+
+}
+
+@keyframes casserole {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: top right;
+      }
+    15% {
+        transform: rotate(-6deg);
+        transform-origin: top right;
+     }
+     50% {
+        transform: rotate(22deg);
+     }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.spin-wrapper {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 4000px;
+    z-index: 100;
+    background-color: white;
+    animation: preloader 0.5s ease-in-out $timing;
+    animation-fill-mode: both;
+}
+
+@keyframes preloader {
+    from { }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.spin-loader {
+  width: $spin-width;
+  height: $spin-width;
+  margin: 200px auto;
+
+  .crepe {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: crepe $timing ease-in-out both;
+  }
+
+  .casserole-full {
+    display:flex;
+    width: 100%;
+    animation: casserole $timing;
+  }
+
+  .casserole {
+    width: 60%;
+    height: 20px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .manche {
+    width: 40%;
+    height: 10px;
+    background: linear-gradient($pan-color-light, $pan-color-dark);
+    border-radius: 10px;
+  }
+}
+
+.page {
+    &__logo {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        padding: 3%;
+        &_leftarrow, &_dummy {
+            flex: 1;
+            padding-left: 3%;
+        }
+        &_leftarrowicon {
+            font-size: 24px;
+        }
+    }
+}
+
 .homeintro {
     margin: 0;
     &__location {
@@ -30,13 +154,27 @@
 .homechoice {
     padding: 1.5rem;
     margin: 0 0 20px 0;
+
+    @media (min-width:$breakpoint-tablet-start) and (max-width:$breakpoint-tablet-end)  {
+        @include block-center;
+    }
+
+    @media (min-width:$breakpoint-desktop) {
+        @include flex-center;
+    }
     &__item {
-       display: flex;
-       background-color: $colour-bg-lightgray;
-       border-radius: 15px;
-       margin: 20px 0 20px 6px;
-       padding: 0 0.5rem 0 0.5rem;
-       box-shadow: 0px 0px 10px lightgray;
+        display: flex;
+        background-color: $colour-bg-lightgray;
+        border-radius: 15px;
+        max-width: 720px;
+        margin: 1.2rem 0.3rem;
+        padding: 0 0.5rem 0 0.5rem;
+        box-shadow: 0px 0px 10px lightgray;
+            
+        @media (min-width:$breakpoint-desktop) {
+            flex: 1;
+            margin: 0 1rem;
+        }
     }
     &__icon {
         padding: 1.2rem;
@@ -60,14 +198,39 @@
     background-color: $colour-bg-lightgray;    
     padding: 2.5rem 1.5rem;
     margin: 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+
+        @media (min-width:$breakpoint-tablet-start) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
     &__item {
+        position: relative;
         width: 100%;
         height: 230px;
         margin: 0 0 30px 0;
-        border-radius: 15px 15px 15px 15px;
+        border-radius: 1rem;
         box-shadow: 10px 10px 10px lightgray;
         background-color: white;
+
+        @media (min-width:$breakpoint-tablet-start) {
+           /* @include flex-center; */
+            margin: 0 3rem 0 0;
+        }
+
     }
+    &__label {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.6rem 0.8rem;
+        background-color: $colour-tertiary;
+    }
+
     &__photo {
         width: 100%;
         height: 155px;
@@ -77,7 +240,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
-        border-radius: 15px 15px 0 0;
+        border-radius: 1rem 1rem 0 0;
     }
     &__item_caption {
         display: flex;
@@ -94,43 +257,11 @@
         }
     }
 
-
-    &__hearticon-fill {
-        margin: 15px 10px 15px 0;
-        font-size: 28px;
-        color: $colour-primary;
-        opacity: 1;
-        width: 30px;
-        visibility: hidden;
-    }
-
-
-    &__hearticon-empty {
-        margin: 15px -28px 15px 0;
-        font-size: 24px;
-    }
-
-    &__heart_div {
+    &__heartdiv { 
+        padding: 0;
+        @include heart-icon-declaration;
         &:hover {
-            
-            .homerest__hearticon-empty {
-                visibility: hidden;
-            }
-            
-            .homerest__hearticon-fill {
-                visibility: visible;
-                animation: heart-grow 1s ease-in-out; 
-                animation-fill-mode: both;
-            }
-
-            @keyframes heart-grow {
-                from { 
-                    opacity: 1;
-                    transform: scale(0);}
-                to { 
-                    opacity: 1;
-                    transform: scale(1);}  
-            }
+            @include heart-icon-animation;
         }
     }
 }
@@ -138,6 +269,7 @@
 .pagemain {
     background-color: $colour-bg-lightgray;
     padding: 0;
+    overflow: hidden;
     &__headerwrapper {
        /* position: relative;*/
        margin-bottom: 30px;
@@ -145,6 +277,7 @@
     
     &__headerbg_img {
         width: 100%;
+        height: 240px;
         object-fit: cover;
     }
     &__headertitle {
@@ -157,44 +290,64 @@
         display: flex;
         justify-content: space-between;
         &_title {
-            margin: 30px 0 20px 1.5rem;
+            margin: 2rem 1rem 0 2rem;
         }
     }
 
-    &__headericon {
-        padding: 36px 26px 5px 7px;
-        font-size: 24px;
+    &__heartdiv {
+        padding: 15px;
+        @include heart-icon-declaration;
+        &:hover {
+            @include heart-icon-animation;
+        }
     }
 
     &__mainwrapper {
-        padding: 1rem;
+        padding: 3rem 1rem 0rem 1rem;
+        display: grid;
+        overflow: hidden;
+        max-width: 100%;
 
+        @media (min-width:$breakpoint-tablet-start) and (max-width:$breakpoint-tablet-end)  {
+            @include block-center;
+        }
+          
+        @media (min-width:$breakpoint-desktop) {
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 1rem;
+        }
+    }
+
+    &__subwrapper {
+        overflow: hidden;
+        padding: 0.4rem 0;
     }
 
     &__item {
         background-color: white;
         border-radius: 10px 10px 10px 10px;
         padding: 2px 10px 2px 10px;
+        overflow: hidden;
+        max-width: 100%;
     }
 
     &__chaptertitle {
         &_box {
-            margin: 30px 0 40px 9px;
+            margin: 10px 0 10px 9px;
         }
         &_h2 {
             text-transform: uppercase;
             font-weight: 300;
-            margin: 30px 0 40px 0;
+            margin: 10px 0 40px 0;
             width: 50px;
             padding-bottom: 0.3rem;
-            border-bottom: 4px solid $colour-checked;
+            border-bottom: 4px solid $colour-tertiary;
         }
     }
-        
     &__button {
         display: flex;
         justify-content: center;
-        padding: 2rem;
+        padding: 0rem 1rem 2rem 1rem;
     }  
 }
 
@@ -206,11 +359,10 @@
     box-shadow: 2px 2px 10px lightgray;
     /*line-height: 0.3rem; NO! issue on ellipsis*/
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-
-    animation: 0.8s ease-in-out slidein-and-fadein;
-    animation-fill-mode: both;
+    overflow: hidden;
+    max-width: 100%;
+   /* justify-content: space-between; not necessary as flex(item):1 */
+    animation: slidein-and-fadein 0.8s ease-in-out both;
 
     @for $i from 1 through 20 {
         &:nth-child(#{$i}) { 
@@ -234,7 +386,8 @@
     }
 
     &__left {
-        width: 270px;
+        flex: 1;
+        overflow: hidden;
     }
     &__right {
         display: flex;
@@ -250,37 +403,34 @@
         margin-top: -10px;
         margin-bottom: 12px;
         @include menu-text-overflow;
-        white-space: normal;
+        white-space: nowrap;
     }
     &__price {
         margin: 10px 20px 11px 10px;
     }
     &__checked {
         @include flex-center;
-        background-color: $colour-checked;
-       /* width: 55px;*/
+        background-color: $colour-tertiary;
         height: 100%;
         border-radius: 0 15px 15px 0;
         width: 0;
     }
     &__smallcircle {
         @include flex-center;
+        color: $colour-tertiary;
         background-color: white;
-        height: 20px;
-        width: 20px;
+        height: 26px;
+        width: 26px;
         border-radius: 50%;
-     /*   opacity: 0;*/
         overflow: hidden;
     }
  
     &:hover  {
         box-shadow: 10px 10px 10px lightgray;
-         .menuitem__checked {
-            animation-name: checked;
-            animation-duration: 0.5s;
-            animation-timing-function: ease-in-out;
-            /* animation-direction: reverse;*/
-            animation-fill-mode: both;
+        overflow: hidden;
+        max-width: 100%;
+        .menuitem__checked {
+            animation: checked 0.5s ease-in-out both;
         } 
 
         @keyframes checked {
@@ -301,11 +451,9 @@
             from {
                 width: 100%;
             }
-
             30% {
                 opacity: 1;
             }
-
             to {
                 opacity: 1;
                 transform: rotate(360deg);
@@ -314,18 +462,8 @@
         
         .menuitem__h2, .menuitem__p {
             white-space: nowrap;
-            animation: text-overflow-ellipsis 0.5s ease-in-out both;
-        }
-
-        @keyframes text-overflow-ellipsis {
-            from {
-                width: 270px; 
-                width: 100%;
-            }
-            to {
-                width: 210px;
-                width: calc(100% - 60px);
-            }
+            @include menu-text-overflow;
+            max-width: 100%;
         }
     }
 }

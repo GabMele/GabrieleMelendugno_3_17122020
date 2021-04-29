@@ -4,8 +4,59 @@
     justify-content: center;
 }
 
+@mixin block-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+}
+
 @mixin menu-text-overflow {
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+@mixin heart-icon-declaration {
+    .hearticon-fill {
+        margin: 15px 10px 15px 0;
+        font-size: 28px;
+        background-image: linear-gradient(180deg, $colour-primary 30%, $colour-secondary 100%);  
+
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+
+        opacity: 1;
+        width: 30px;
+        visibility: hidden;
+    }
+
+    .hearticon-empty {
+        margin: 15px -28px 15px 0;
+        font-size: 24px;
+    }
+}
+
+@mixin heart-icon-animation {
+    .hearticon-empty {
+        visibility: hidden;
+    }
+    
+    .hearticon-fill {
+        visibility: visible;
+        animation: heart-grow 1s ease-in-out; 
+        animation-fill-mode: both;
+    }
+
+    @keyframes heart-grow {
+        from { 
+            opacity: 1;
+            transform: scale(0);
+        }
+        to { 
+            opacity: 1;
+            transform: scale(1);
+        }  
+    }
 }
