@@ -1,7 +1,7 @@
 
 
 $spin-width: 180px;
-$timing: 2.8s;
+$timing: 2.2s;
 
 /* DEBUG MODE */
 /*$timing: 0.1s;*/
@@ -290,7 +290,7 @@ $loader-color: $colour-tertiary;
         display: flex;
         justify-content: space-between;
         &_title {
-            margin: 2rem 1rem 0 2rem;
+            margin: 2rem 1rem 0 1.5rem;
         }
     }
 
@@ -320,7 +320,7 @@ $loader-color: $colour-tertiary;
 
     &__subwrapper {
         overflow: hidden;
-        padding: 0.4rem 0;
+        padding: 0.4rem 1rem 0.2rem 0.2rem;;
     }
 
     &__item {
