@@ -1,5 +1,3 @@
-
-
 $spin-width: 180px;
 $timing: 2.2s;
 
@@ -203,6 +201,7 @@ $loader-color: $colour-tertiary;
         grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
         row-gap: 2rem;
+        padding-bottom: 2rem;
 
         @media (min-width:$breakpoint-tablet-start) {
             grid-template-columns: repeat(2, 1fr);
@@ -212,7 +211,7 @@ $loader-color: $colour-tertiary;
         position: relative;
         width: 100%;
         height: 230px;
-        margin: 0 0 30px 0;
+        margin: 0;
         border-radius: 1rem;
         box-shadow: 10px 10px 10px lightgray;
         background-color: white;
@@ -445,7 +444,6 @@ $loader-color: $colour-tertiary;
         .menuitem__smallcircle {
             animation: slidein-spinning 0.5s ease-in-out 0.1s both;
         }
-
 
         @keyframes slidein-spinning {
             from {
