@@ -422,6 +422,9 @@ $loader-color: $colour-tertiary;
         width: 26px;
         border-radius: 50%;
         overflow: hidden;
+        transform: rotate(0);
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
     }
  
     &:hover  {
@@ -442,20 +445,7 @@ $loader-color: $colour-tertiary;
         }
 
         .menuitem__smallcircle {
-            animation: slidein-spinning 0.5s ease-in-out 0.1s both;
-        }
-
-        @keyframes slidein-spinning {
-            from {
-                width: 100%;
-            }
-            30% {
-                opacity: 1;
-            }
-            to {
-                opacity: 1;
-                transform: rotate(360deg);
-            }
+            transform: rotate(360deg);
         }
         
         .menuitem__h2, .menuitem__p {
