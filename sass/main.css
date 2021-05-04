@@ -490,7 +490,7 @@ li a {
 @media (min-width: 1200px) {
   .pagemain__mainwrapper {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
+    column-gap: 0.3rem;
   }
 }
 
